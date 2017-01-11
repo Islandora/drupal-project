@@ -1,18 +1,27 @@
 {
-    "name": "drupal-composer/drupal-project",
+    "name": "islandora/drupal-project",
     "description": "Project template for Drupal 8 projects with composer",
     "type": "project",
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "",
-            "role": ""
+            "name": "Islandora Foundation",
+            "role": "Owner",
+            "email": "community@islandora.ca"
         }
     ],
     "repositories": [
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Islandora-CLAW/islandora"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Islandora-CLAW/islandora_collection"
         }
     ],
     "require": {
@@ -21,7 +30,15 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
-        "drupal/console": "~1.0"
+        "drupal/console": "~1.0",
+        "drupal/devel": "^1.0@beta",
+        "drupal/rdfui": "^1.0@beta",
+        "drupal/restui": "^1.13",
+        "drupal/media_entity": "^1.6",
+        "drupal/media_entity_image": "^1.2",
+        "drupal/bootstrap": "^3.1",
+        "drupal/islandora": "dev-8.x-1.x",
+        "drupal/islandora_collection": "dev-master"
     },
     "require-dev": {
         "behat/mink": "~1.7",
