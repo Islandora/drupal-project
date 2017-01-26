@@ -14,18 +14,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/Islandora-CLAW/islandora"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/Islandora-CLAW/islandora_collection"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/Islandora-CLAW/claw-jsonld"
         }
     ],
     "require": {
@@ -41,6 +29,8 @@
         "drupal/media_entity": "^1.6",
         "drupal/media_entity_image": "^1.2",
         "drupal/bootstrap": "^3.1",
+        "islandora/islandora": "dev-8.x-1.x",
+        "islandora/claw-jsonld": "dev-8.x-1.x",
         "islandora/islandora_collection": "dev-8.x-1.x"
     },
     "require-dev": {
