@@ -29,8 +29,6 @@
         "drupal/media_entity": "^1.6",
         "drupal/media_entity_image": "^1.2",
         "drupal/bootstrap": "^3.1",
-        "islandora/islandora": "dev-8.x-1.x",
-        "islandora/claw-jsonld": "dev-8.x-1.x",
         "islandora/islandora_collection": "dev-8.x-1.x"
     },
     "require-dev": {
