@@ -29,6 +29,8 @@
         "drupal/media_entity": "^1.6",
         "drupal/media_entity_image": "^1.2",
         "drupal/bootstrap": "^3.1",
+        "drupal/search_api_solr": "1.0.0",
+        "drupal/facets": "1.x-dev",
         "islandora/islandora_image": "dev-8.x-1.x"
     },
     "require-dev": {
