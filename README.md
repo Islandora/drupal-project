@@ -47,7 +47,7 @@ When installing the given `composer.json` some tasks are taken care of:
 * Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
 * Creates default writable versions of `settings.php` and `services.yml`.
 * Creates `web/sites/default/files`-directory.
-* Latest version of drush is installed locally for use at `vendor/bin/drush`.
+* Latest version of Drush is installed locally for use at `vendor/bin/drush`.
 * Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
 * Creates environment variables based on your .env file. See [.env.example](.env.example).
 
@@ -87,7 +87,7 @@ that the generated `composer.json` might differ from this project's file.
 ### Should I commit the contrib modules I download?
 
 Composer recommends **no**. They provide [argumentation against but also 
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
+workarounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
 
 ### Should I commit the scaffolding files?
 
