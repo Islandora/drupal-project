@@ -78,6 +78,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/features": {
+                "Patch features to work with drush and drupal 8.8.1": "https://www.drupal.org/files/issues/2019-10-30/features-3.8-issue-3091278.patch"
+            }
         }
     }
 }
