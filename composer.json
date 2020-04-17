@@ -23,6 +23,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.8.1",
         "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/devel": "^2.1",
         "drush/drush": "^9.7.1",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
@@ -60,7 +61,6 @@
         ]
     },
     "extra": {
-        "enable-patching": true,
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
