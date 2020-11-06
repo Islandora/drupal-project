@@ -43,4 +43,3 @@ script:
   # Run a single unit test to verfiy the testing setup.
   - ./vendor/bin/phpunit -c ./web/core ./web/core/modules/system/tests/src/Unit/SystemRequirementsTest.php
   - ./vendor/bin/drush
-  - if [[ $RELEASE = stable ]]; then ./vendor/bin/drupal; fi;
