@@ -18,24 +18,25 @@
     ],
     "require": {
         "php": ">=7.0.8",
-        "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6.5",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/core": "^8.8.1",
-        "drupal/core-composer-scaffold": "^8.8.0",
+        "drupal/core-composer-scaffold": "^8.8.1",
         "drush/drush": "^9.7.1",
-        "vlucas/phpdotenv": "^4.0",
-        "webflo/drupal-finder": "^1.0.0",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "vlucas/phpdotenv": "^5.1",
+        "webflo/drupal-finder": "^1.2",
+        "zaporylie/composer-drupal-optimizations": "^1.2"
     },
     "require-dev": {
         "drupal/core-dev": "^8.8.1"
     },
-    "conflict": {
+        "conflict": {
         "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "discard-changes": true,
         "sort-packages": true
     },
     "autoload": {
@@ -52,19 +53,13 @@
             "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
         ],
         "post-install-cmd": [
-            "@composer drupal:scaffold",
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
         "post-update-cmd": [
-            "@composer drupal:scaffold",
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "drupal/core": "-p2"
-        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
@@ -77,6 +72,12 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
         }
     }
 }
