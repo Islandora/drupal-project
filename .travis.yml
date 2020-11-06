@@ -10,8 +10,9 @@ matrix:
   fast_finish: true
   allow_failures:
     - php: 7.2
-      env: RELEASE=dev COMPOSER_CHANNEL=stable
+      env: RELEASE=stable COMPOSER_CHANNEL=snapshot
     - php: 7.3
+      env: RELEASE=stable COMPOSER_CHANNEL=snapshot
 
 env:
   global:
